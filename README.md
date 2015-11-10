@@ -26,6 +26,12 @@ $("#drop-area-div").dmUploader(options);
 This way you can initialize the plugin. As parameter you can set all variables you want and the same goes for callbacks;
 down bellow you can see a list of what [options](#options) and [callbacks](#callbacks) are availabe.
 
+````javascript
+$("#drop-area-div").data('dmUploader').({ galleryID: 1 });
+````
+
+This way you can set extraData AFTER dmUploader has initialized. Its useful for dropdowns.
+
 ##Markup
 This is the simple html markup. The file input is optional but it provides an alternative way to select files for the user(check the online demo to se how to hide/style it)
 ````html
