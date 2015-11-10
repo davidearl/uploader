@@ -275,6 +275,13 @@
     });
   }
 
+  DmUploader.prototype.setExtraData = function(options)
+  {
+    if( typeof options === 'undefined' ) return;
+
+    this.settings.extraData = options;
+  }
+
   $.fn.dmUploader = function(options){
     return this.each(function(){
       if(!$.data(this, pluginName)){
